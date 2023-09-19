@@ -153,37 +153,36 @@ We are making a custom log that contains geographic information so we can discov
 <br />
 <br />
 <h2>Step 9: Running a PowerShell Script</h2>
-
-1. Open the following [PowerShell Script](https://github.com/joshmadakor1/Sentinel-Lab/blob/main/Custom_Security_Log_Exporter.ps1) made by Josh Makadour 
+Open the following [PowerShell Script](https://github.com/joshmadakor1/Sentinel-Lab/blob/main/Custom_Security_Log_Exporter.ps1) made by Josh Makadour 
 <br />
-2. Open PowerShell ISE > New > Copy/Paste the PowerShell script above > Save to desktop as 'logexporter'
+<br />
+Open PowerShell ISE > New > Copy/Paste the PowerShell script above > Save to desktop as 'logexporter'
 <br />
 <br />
 <img width="468" alt="image" src="https://github.com/miahippisley/Microsoft-Azure-Sentinel-Live-Attack-Map/assets/127256439/7b2805f3-1d56-41b4-8f37-1878248f3db6">
 <br />
 <br />
-3. Sign up to [Free IP Geolocation API and Accurate IP Lookup Database](https://ipgeolocation.io/![image](https://github.com/miahippisley/Microsoft-Azure-Sentinel-Live-Attack-Map/assets/127256439/120312df-9d3d-4afa-9999-3abc28ccac71)
+
+Sign up to [Free IP Geolocation API and Accurate IP Lookup Database](https://ipgeolocation.io/)
 <br />
 <br />
-4. You will be given your own API key. Replace the API key in the PowerShell script with this, to allow you to get the geographical data.
+You will be given your own API key. Replace the API key in the PowerShell script with this, to allow you to get the geographical data.
 <br />
 <br />
-5. Run the script. This will perpetually collect log data and create a new log file. 
+Run the script. This will perpetually collect log data and create a new log file. 
 <br />
 <br />
 As per the PowerShell script, log file will be named 'failed_rdp.log' and its location is
 `C:\ProgramData\failed_rdp.log`.
 <br />
 <br />
-<h2>Step 9: Create a custlom log in LAW to bring in our custom log</h2>
+<h2>Step 10: Create a custlom log in LAW to bring in our custom log</h2>
 We will now create a custom log inside our log analytics workspace that will allow us to bring the custom log containing the geodata into our log analytics workspace.
 <br />
 <br />
 1. Search Log Analytics Workspace > (your workspace name) > Tables > Create > New Custom Log (MMA Based)
 <br />
-<br />
 You will be asked to select a log file, but our log file will be on the virtual machine, rather than the host computer. 
-<br />
 <br />
 2. Open the log file in the VM, select all and copy.
 <br />
@@ -211,7 +210,7 @@ You will be asked to select a log file, but our log file will be on the virtual 
 It will take about 30 minutes for it to sync with the virtual machine. 
 <br />
 <br />
-<h2>Step 10: Extract fields from raw custom log data</h2>
+<h2>Step 11: Extract fields from raw custom log data</h2>
 The log data collects multiple pieces of geographical information (e.g. longitude, latitude, city, country), so we need to parse the data into the multiple properties. 
 <br />
 1. Go to Log Analytics Workspaces > (your workspace name) > Logs
@@ -230,7 +229,7 @@ FAILED_RDP_WITH_GEO_CL
 <img width="468" alt="image" src="https://github.com/miahippisley/Microsoft-Azure-Sentinel-Live-Attack-Map/assets/127256439/c12ea4da-d7ac-484a-95d3-213415a5934a">
 <br />
 <br />
-<h2>Step 11: Map the Data in Sentinel</h2>
+<h2>Step 12: Map the Data in Sentinel</h2>
 1. Search for Sentinel in Microsoft Azure and click on your log analytics workspace.
 <br />
 <br />
@@ -314,8 +313,8 @@ Select Apply > Save > Close. Save as 'Failed RDP World Map', in the same region 
 <br />
 As you refresh the map, additonal incoming failed RDP attacks will come in. 
 
-<h2>Step 12: IMPORTANT: Deprovision</h2>
-Search Resource groups > (your research group) > Delete resource group
+<h2>Step 13: IMPORTANT: Deprovision</h2>
+Search Resource groups > (your research group) > Delete resource group.
 <br />
 Check 'Apply force delete for Virtual machine and Virtual machine scale sets' and delete. 
 <br />
