@@ -87,8 +87,15 @@ We are making a custom log that contains geographic information so we can discov
 <br />
 <br />
 Return to the Search bar and enter 'Microsoft Defender for the Cloud'. 
-
-
+<br />
+<br />
+<img width="468" alt="image" src="https://github.com/miahippisley/Microsoft-Azure-Sentinel-Live-Attack-Map/assets/127256439/2ead69f1-77a4-4b96-bd75-ebab0ab359a5">
+<br />
+<br />
+Uncheck SQL servers and press save. 
+<br />
+<br />
+Select Data collection > All Events > Save
 
 
 <br />
