@@ -154,7 +154,6 @@ We are making a custom log that contains geographic information so we can discov
 
 1. Open the following [PowerShell Script](https://github.com/joshmadakor1/Sentinel-Lab/blob/main/Custom_Security_Log_Exporter.ps1) made by Josh Makadour 
 <br />
-<br />
 2. Open PowerShell ISE > New > Copy/Paste the PowerShell script above > Save to desktop as 'logexporter'
 <br />
 <br />
@@ -198,7 +197,6 @@ You will be asked to select a log file, but our log file will be on the virtual 
 <br />
 5. Select Collection paths and input the location of the file in the <b>virtual machine</b> 
 `C:\ProgramData\failed_rdp.log`
-<br />
 <br />
 6. Select Details, name your custom log 'FAILED_RDP_WITH_GEO' and save. 
 <br />
