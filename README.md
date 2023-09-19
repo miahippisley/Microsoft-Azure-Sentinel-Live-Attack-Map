@@ -77,9 +77,16 @@ This will allow all traffic from the internet into the lab; we want the virtual 
 <br />
 <br />
 <h2>Step 3: Create a Log Analytics Workspace</h2>
+Return to the Search bar and visit 'Log Analytics Workspaces' and create a workspace. Enter the name of your resource group created earlier and name your workspace. You can name it anything, but mine is called "law-exposedlab".  
 <br />
 <br />
-Return to the Search bar and visit 'Log Analytics Workspaces' and create a workspace. We are making a custom log that contains geographic informations so that we can discover where the attacks are coming from. 
+<img width="468" alt="image" src="https://github.com/miahippisley/Microsoft-Azure-Sentinel-Live-Attack-Map/assets/127256439/6f316c72-c9d2-4eeb-b33d-41a321069861">
+<br />
+<br />
+We are making a custom log that contains geographic information so we can discover where the attacks are coming from.
+<br />
+<br />
+Return to the Search bar and enter 'Microsoft Defender for the Cloud'. 
 
 
 
