@@ -77,7 +77,7 @@ This will allow all traffic from the internet into the lab; we want the virtual 
 <br />
 <br />
 <h2>Step 3: Create a Log Analytics Workspace</h2>
-Return to the Search bar and visit 'Log Analytics Workspaces' and create a workspace. Enter the name of your resource group created earlier and name your workspace. You can name it anything, but mine is called "law-exposedlab".  
+Return to the Search bar and visit 'Log Analytics Workspaces' and create a workspace. Add it to the same resoruce group and region as your VM and name your workspace. You can name it anything, but mine is called "law-exposedlab". 
 <br />
 <br />
 <img width="468" alt="image" src="https://github.com/miahippisley/Microsoft-Azure-Sentinel-Live-Attack-Map/assets/127256439/6f316c72-c9d2-4eeb-b33d-41a321069861">
@@ -86,7 +86,8 @@ Return to the Search bar and visit 'Log Analytics Workspaces' and create a works
 We are making a custom log that contains geographic information so we can discover where the attacks are coming from.
 <br />
 <br />
-Return to the Search bar and enter 'Microsoft Defender for the Cloud'. 
+<h2>Step 4: Configure Microsoft Defender for Cloud</h2>
+Return to the Search bar and enter 'Microsoft Defender for Cloud'. 
 <br />
 <br />
 <img width="468" alt="image" src="https://github.com/miahippisley/Microsoft-Azure-Sentinel-Live-Attack-Map/assets/127256439/2ead69f1-77a4-4b96-bd75-ebab0ab359a5">
@@ -96,8 +97,37 @@ Uncheck SQL servers and press save.
 <br />
 <br />
 Select Data collection > All Events > Save
-
-
 <br />
-
+<br />
+<img width="468" alt="image" src="https://github.com/miahippisley/Microsoft-Azure-Sentinel-Live-Attack-Map/assets/127256439/a36dacd0-676d-4393-a532-36ebfbc3a922">
+<br />
+<br />
+Select Defender plans and apply: 
+<br />
+<br />
+<h2>Step 5: Connect Log Analytics to VM</h2>
+- Search for log analytics workspace and select your workspace
+<br />
+- Select Virtual Machines > (virtual machine name e.g. exposed-lab) > Connect
+<br />
+<br />
+<h2>Step 6: Setup Azure Sentinel>
+Search for Microsoft Sentinel, this is our SIEM we will use to visualise the data.
+<br />
+<br />
+- Select Create > (your log analytics workspace name e.g. law-exposedlab)
+<br />
+<br />
+- Search for Virtual Machines > (virtual machine name)
+  <br />
+- Copy the Public IP address
+<br />
+<br />
+- Open Windows Remote Desktop
+  <br />
+- Paste the IP Address vopied from the virtual machine. If you are using a Mac, select 'Add PC' and then paste the IP address.
+  <br />
+- After creating your remote desktop, double-click and create a username and password
+<br />
+<br />
 
