@@ -136,7 +136,14 @@ Search for Microsoft Sentinel, this is our SIEM we will use to visualise the dat
 <h2>Step 8: Turn off Windows Firewall in VM</h2>
 <br />
 <br />
-- Inside the VM, click Start > Event Viewer > Windows Logs > Security
-
+- Inside the VM, click Start and search for 'wf.msc'
+<br />
+- Disable domain, public and private firewalls
+<br />
+- Select Windows Defender Firewall Properties
+<br />
+<img width="468" alt="image" src="https://github.com/miahippisley/Microsoft-Azure-Sentinel-Live-Attack-Map/assets/127256439/6d406450-309f-4518-9a3a-0489ae4f10a0">
+<br />
+<br />
 
 
