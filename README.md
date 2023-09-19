@@ -102,22 +102,20 @@ Select Data collection > All Events > Save
 <img width="468" alt="image" src="https://github.com/miahippisley/Microsoft-Azure-Sentinel-Live-Attack-Map/assets/127256439/a36dacd0-676d-4393-a532-36ebfbc3a922">
 <br />
 <br />
-Select Defender plans and apply: 
-<br />
-<br />
 <h2>Step 5: Connect Log Analytics to VM</h2>
 - Search for log analytics workspace and select your workspace
 <br />
 - Select Virtual Machines > (virtual machine name e.g. exposed-lab) > Connect
 <br />
 <br />
-<h2>Step 6: Setup Azure Sentinel>
+<h2>Step 6: Setup Azure Sentinel</h2>
 Search for Microsoft Sentinel, this is our SIEM we will use to visualise the data.
 <br />
 <br />
 - Select Create > (your log analytics workspace name e.g. law-exposedlab)
 <br />
 <br />
+<h2>Step 7: Log into VM with Remote Desktop</h2>
 - Search for Virtual Machines > (virtual machine name)
   <br />
 - Copy the Public IP address
@@ -127,7 +125,18 @@ Search for Microsoft Sentinel, this is our SIEM we will use to visualise the dat
   <br />
 - Paste the IP Address vopied from the virtual machine. If you are using a Mac, select 'Add PC' and then paste the IP address.
   <br />
-- After creating your remote desktop, double-click and create a username and password
+- After creating your remote desktop, double-click and create a username and password.
 <br />
 <br />
+<img width="269" alt="image" src="https://github.com/miahippisley/Microsoft-Azure-Sentinel-Live-Attack-Map/assets/127256439/f24464c2-fed5-4645-a36e-dbe1d3ae5837">
+
+<img width="468" alt="image" src="https://github.com/miahippisley/Microsoft-Azure-Sentinel-Live-Attack-Map/assets/127256439/8c02535f-ca0b-462a-8c94-9f1bccf75391">
+<br />
+<br />
+<h2>Step 8: Turn off Windows Firewall in VM</h2>
+<br />
+<br />
+- Inside the VM, click Start > Event Viewer > Windows Logs > Security
+
+
 
