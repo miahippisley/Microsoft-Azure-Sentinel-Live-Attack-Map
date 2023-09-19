@@ -1,9 +1,11 @@
-<h1>SIEM tutorial: Cyber Attacks Map Using Azure Sentinel </h1>
+<h1>SIEM tutorial: Live Cyber Attacks Map Using Azure Sentinel </h1>
 
 <h2>Description</h2>
 This project uses Microsoft Azure and a virtual machine in the cloud running Windows 10. The VM computer system is set-up to be intentionally compromised, to make it discoverable and enticing to hackers. A log analytics workspace is configured in Azure to ingest custom logs containing information such as latitude, longitude, country and state/province. The log data is collected, queried using Azure Sentinel (the SIEM we use to visualise the data), and displayed in real-time on a heat map showing the physical location and magnitude of the attempted attacks.
 <br />
-
+<br />
+<img width="468" alt="image" src="https://github.com/miahippisley/Microsoft-Azure-Sentinel-Live-Attack-Map/assets/127256439/680fdfc5-8fe6-4b6b-992d-18209f61dae2">
+<br />
 <h2>Tools and requirements:</h2>
 
 - <b>Microsoft Azure</b> 
