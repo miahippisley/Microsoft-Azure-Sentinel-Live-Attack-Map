@@ -153,7 +153,8 @@ Search for Microsoft Sentinel, this is our SIEM we will use to visualise the dat
 <img width="306" alt="image" src="https://github.com/miahippisley/Microsoft-Azure-Sentinel-Live-Attack-Map/assets/127256439/39dba72f-622e-4514-9071-b8e785ccd939">
 <br />
 <br />
-In order to test that the VM is reachable, you can type `ping -t <VM IP>`
+<h2>Step 9: Running a PowerShell Script</h2>
+- Open the following [PowerShell Script](https://github.com/joshmadakor1/Sentinel-Lab/blob/main/Custom_Security_Log_Exporter.ps1) made by Josh Makadour and Copy/Paste. 
 
 
 
