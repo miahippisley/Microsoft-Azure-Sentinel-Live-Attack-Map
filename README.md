@@ -138,12 +138,16 @@ Search for Microsoft Sentinel, this is our SIEM we will use to visualise the dat
 <br />
 - Inside the VM, click Start and search for 'wf.msc'
 <br />
-- Disable domain, public and private firewalls
-<br />
 - Select Windows Defender Firewall Properties
+<br />
+<br />
+<img width="468" alt="image" src="https://github.com/miahippisley/Microsoft-Azure-Sentinel-Live-Attack-Map/assets/127256439/9eb7db4f-0507-41c1-b751-6f27e24919bc">
+<br />
 <br />
 <img width="468" alt="image" src="https://github.com/miahippisley/Microsoft-Azure-Sentinel-Live-Attack-Map/assets/127256439/6d406450-309f-4518-9a3a-0489ae4f10a0">
 <br />
 <br />
+- Disable domain, public and private firewalls
+
 
 
