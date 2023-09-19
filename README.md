@@ -158,9 +158,44 @@ Search for Microsoft Sentinel, this is our SIEM we will use to visualise the dat
 Open the following [PowerShell Script](https://github.com/joshmadakor1/Sentinel-Lab/blob/main/Custom_Security_Log_Exporter.ps1) made by Josh Makadour 
 <br />
 <br />
-Open PowerShell ISE > New > Copy/Paste the PowerShell script above > Save to desktop
+Open PowerShell ISE > New > Copy/Paste the PowerShell script above > Save to desktop as 'logexporter'
 <br />
 <br />
+<img width="468" alt="image" src="https://github.com/miahippisley/Microsoft-Azure-Sentinel-Live-Attack-Map/assets/127256439/7b2805f3-1d56-41b4-8f37-1878248f3db6">
+<br />
+<br />
+Sign up to [Free IP Geolocation API and Accurate IP Lookup Database](https://ipgeolocation.io/![image](https://github.com/miahippisley/Microsoft-Azure-Sentinel-Live-Attack-Map/assets/127256439/120312df-9d3d-4afa-9999-3abc28ccac71)
+<br />
+<br />
+You will be given your own API key. Replace the API key in the PowerShell script with this, to allow you to get the geographical data.
+<br />
+<br />
+Run the script. This will perpetually collect log data and create a new log file. 
+<br />
+<br />
+As per the PowerShell script, log file will be named 'failed_rdp.log' and its location is
+`C:\ProgramData\failed_rdp.log`.
+<br />
+<br />
+<h2>Step 9: Create a custlom log in LAW to bring in our custom log</h2>
+We will now create a custom log inside our log analytics workspace that will allow us to bring the custom log containing the geodata into our log analytics workspace.
+<br />
+<br />
+- Search Log Analytics Workspace > (your workspace name) > Tables > Create > New Custom Log (MMA Based)
+<br />
+<br />
+You will be asked to select a log file, but our log file will be on the virtual machine, rather than the host computer. 
+<br />
+<br />
+- Open the log file in the VM, select all and copy.
+<br />
+- Open a notepad on your host computer, paste the log file and save the text file. 
+
+
+
+
+
+
 
 
 
