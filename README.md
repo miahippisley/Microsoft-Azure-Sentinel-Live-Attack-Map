@@ -21,5 +21,6 @@ This project uses Microsoft Azure and a virtual machine in the cloud running Win
 Search for 'Virtual Machines' in the search bar of the "Quickstart Center" page.
 Select Create > Azure Virtual Machine. Create a new resource group and name it something - mine is called "exposed-lab". 
 
+![Step2](<img width="469" alt="Step2" src="https://github.com/miahippisley/Microsoft-Azure-Sentinel-Live-Attack-Map/assets/127256439/73f399aa-82df-4287-aa1d-89c3766699bb">)
 
 
