@@ -154,7 +154,13 @@ Search for Microsoft Sentinel, this is our SIEM we will use to visualise the dat
 <br />
 <br />
 <h2>Step 9: Running a PowerShell Script</h2>
-- Open the following [PowerShell Script](https://github.com/joshmadakor1/Sentinel-Lab/blob/main/Custom_Security_Log_Exporter.ps1) made by Josh Makadour and Copy/Paste. 
+
+Open the following [PowerShell Script](https://github.com/joshmadakor1/Sentinel-Lab/blob/main/Custom_Security_Log_Exporter.ps1) made by Josh Makadour 
+<br />
+<br />
+Open PowerShell ISE > New > Copy/Paste the PowerShell script above > Save to desktop
+<br />
+<br />
 
 
 
