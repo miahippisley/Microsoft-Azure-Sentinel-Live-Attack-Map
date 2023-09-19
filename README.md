@@ -190,6 +190,19 @@ You will be asked to select a log file, but our log file will be on the virtual 
 - Open the log file in the VM, select all and copy.
 <br />
 - Open a notepad on your host computer, paste the log file and save the text file. 
+<br />
+<br />
+<img width="468" alt="image" src="https://github.com/miahippisley/Microsoft-Azure-Sentinel-Live-Attack-Map/assets/127256439/fb1b66b7-d419-4bbe-9099-1809732bfa87">
+<img width="468" alt="image" src="https://github.com/miahippisley/Microsoft-Azure-Sentinel-Live-Attack-Map/assets/127256439/df4f4b1c-c58b-48a1-8ef8-5113a23d057d">
+<br />
+<br />
+- Return to Microsoft Azure and select your new file as the log file. 
+<br />
+- Select Collection paths and input the location of the file in the <b>virtual machine</b> 
+`C:\ProgramData\failed_rdp.log`
+<br />
+- Name your custom log 'FAILED_RDP_WITH_GEO' and save. 
+
 
 
 
