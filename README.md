@@ -148,6 +148,15 @@ Search for Microsoft Sentinel, this is our SIEM we will use to visualise the dat
 <br />
 <br />
 - Disable domain, public and private firewalls
+<br />
+<br />
+<img width="306" alt="image" src="https://github.com/miahippisley/Microsoft-Azure-Sentinel-Live-Attack-Map/assets/127256439/39dba72f-622e-4514-9071-b8e785ccd939">
+<br />
+<br />
+In order to test that the VM is reachable, you can type `ping -t <VM IP>`
+
+
+
 
 
 
