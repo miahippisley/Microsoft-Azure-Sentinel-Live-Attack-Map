@@ -1,7 +1,7 @@
 <h1>SIEM tutorial: Live Cyber Attacks Map Using Azure Sentinel </h1>
 
 <h2>Description</h2>
-This project uses Microsoft Azure and a virtual machine in the cloud running Windows 10. The VM computer system is set-up to be intentionally compromised, to make it discoverable and enticing to hackers. A log analytics workspace is configured in Azure to ingest custom logs containing information such as latitude, longitude, country and state/province. The log data is collected, queried using Azure Sentinel (the SIEM we use to visualise the data), and displayed in real-time on a heat map showing the physical location and magnitude of the attempted attacks.
+This project uses Microsoft Azure and a virtual machine in the cloud running Windows 10. The VM computer system is set up to be intentionally compromised, to make it discoverable and enticing to hackers. A log analytics workspace is configured in Azure to ingest custom logs containing information such as latitude, longitude, country and state/province. The log data is collected, queried using Azure Sentinel (the SIEM we use to visualise the data), and displayed in real-time on a heat map showing the physical location and magnitude of the attempted attacks.
 <br />
 <br />
 <img width="468" alt="image" src="https://github.com/miahippisley/Microsoft-Azure-Sentinel-Live-Attack-Map/assets/127256439/680fdfc5-8fe6-4b6b-992d-18209f61dae2">
@@ -19,7 +19,7 @@ This project uses Microsoft Azure and a virtual machine in the cloud running Win
 
 <h2>Step 1: Create a free Azure subscription</h2>
 
-[Microsoft Azure](https://azure.microsoft.com/en-gb/free/search/?ef_id=_k_CjwKCAjwjaWoBhAmEiwAXz8DBSoVqr5MvGTl_hPm1ICTlXr-qRvUEvbXY2GDLQTxZLlndplAer3LwRoCdTAQAvD_BwE_k_&OCID=AIDcmm3bvqzxp1_SEM__k_CjwKCAjwjaWoBhAmEiwAXz8DBSoVqr5MvGTl_hPm1ICTlXr-qRvUEvbXY2GDLQTxZLlndplAer3LwRoCdTAQAvD_BwE_k_&gad=1&gclid=CjwKCAjwjaWoBhAmEiwAXz8DBSoVqr5MvGTl_hPm1ICTlXr-qRvUEvbXY2GDLQTxZLlndplAer3LwRoCdTAQAvD_BwE) offer a free £200 credit for 30 days
+[Microsoft Azure](https://azure.microsoft.com/en-gb/free/search/?ef_id=_k_CjwKCAjwjaWoBhAmEiwAXz8DBSoVqr5MvGTl_hPm1ICTlXr-qRvUEvbXY2GDLQTxZLlndplAer3LwRoCdTAQAvD_BwE_k_&OCID=AIDcmm3bvqzxp1_SEM__k_CjwKCAjwjaWoBhAmEiwAXz8DBSoVqr5MvGTl_hPm1ICTlXr-qRvUEvbXY2GDLQTxZLlndplAer3LwRoCdTAQAvD_BwE_k_&gad=1&gclid=CjwKCAjwjaWoBhAmEiwAXz8DBSoVqr5MvGTl_hPm1ICTlXr-qRvUEvbXY2GDLQTxZLlndplAer3LwRoCdTAQAvD_BwE) offer a free £200 credit for 30 days.
 
 <h2>Step 2: Create a Virtual Machine</h2>
 1. Search for "Virtual Machines" in the search bar of the "Quickstart Center" page
